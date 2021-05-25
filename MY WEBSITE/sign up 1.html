@@ -1,0 +1,139 @@
+<html>   
+   <head>
+      <link rel="stylesheet" type="text/css" href="animate.css">
+      <title></title>  
+      <style>
+         body {
+         background-image:url("sign up.jpg") ;
+         background-repeat:no-repeat;
+         background-size:cover;
+
+         }
+         td
+         {
+         color:#fff;
+         }
+         .main-nav{
+float:right;
+margin-top:60px;
+}
+.main-nav li{
+display:inline-block;
+list-style:none;
+margin-left:40px;
+}
+
+.main-nav li a{
+padding:5px 0;
+color: #fff;
+text-decoration:none;
+font-size:18px;
+}
+.main-nav li a:hover{
+border-bottom:2px solid #bf55ec;
+}
+p{
+     -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  text-align: center;
+  font-family: cursive;
+  font-size: 30px;
+  font-style-color: white;
+}
+      </style>    
+           
+<script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.Name.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+         if( document.myForm.EMail.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.Zip.value.length != 5 ) {
+            
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+         if( document.myForm.Country.value == "-1" ) {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
+
+   </head>
+   
+   <body>
+      <header >
+
+<nav>
+<div class="row">
+
+<img src="logo1.png">
+<ul class="main-nav" >
+
+<li ><a href="delieveryform.html">HOME DELIEVERY</a></li>
+<li ><a href="check more1.html">CHECK  MORE</a></li>
+<li ><a href="sign up 1.html">SIGN UP</L></a></li>
+<li ><a href="about us.html">ABOUT US</a></li>
+</UL>
+</div>
+</nav>
+      <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+<center>
+         <table cellspacing = "2" cellpadding = "15" border = "5"  style= "margin-top:150px;">
+            
+            <tr>
+               <td style="font-size:20px;text-align = right;font-color:#fff;" >Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td style="font-size:20px;text-align = right;font-color:#fff;">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td style="font-size:20px;text-align = right;font-color:#fff;">Zip Code</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+            
+            <tr>
+               <td style="font-size:20px;text-align = right;" >City</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">BALTANA</option>
+                     <option value = "2">CHANDIGARH</option>
+                     <option value = "3">MOHALI</option>   
+                     <option value = "4">ZIRAKPUR</option>
+                      <option value = "5">DERRABASI</option>
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               
+               <td colspan="2"><center><input type = "submit" value = "Submit" /></center></td>
+            </tr>
+            
+         </table>
+</center>
+      </form>
+<!--<h2 style= "margin-top:200px;">ROLL NO:-1902255</h2> --> 
+<p class="animate__shakeX"><b>Coffee: </b><i>A liquid hug for your brain</i></p>    
+   </body>
+</html>
+

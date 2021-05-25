@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>coffee hilltop</title>
+	<link rel="stylesheet" type="text/css" href="mystyle1.css">
+	<style>
+		body {
+			background-image:url("bg4.webp") ;
+			background-repeat:no-repeat;
+			background-size:cover;
+			font-family: 'britannic bold';
+		}
+		h1{
+			color:#fff;
+		}
+	</style>
+</head>
+<body> 
+	<header>
+		<nav>
+			<div class="row">
+				<img src="logo1.png">
+				<ul class="main-nav" >
+					<li ><a href="delieveryform.html">HOME DELIEVERY</a></li>
+					<li ><a href="check more1.html">CHECK  MORE</a></li>
+					<li ><a href="sign up 1.html">SIGN UP</a></li>
+					<li ><a href="about us.html">ABOUT US</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="main -content-header">
+			<h1 ><b> WELCOME TO COFFEE HILLTOP <BR>
+			CHANGE THE WORLD .START WITH COFFEE.</b>
+			</h1>
+			<a href="reserve.html" class="btn btn-full"> Reserve your seats </a>
+			<a href="show me more.html" class= "btn btn-nav"> show me more </a>
+		</div>
+	</header>
+	<h2 style= "margin-top:200px;">ROLL NO:-1902255</h2>
+</body>
+</html>

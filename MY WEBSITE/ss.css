@@ -1,0 +1,18 @@
+.row{
+max-width:1180px;
+margin:0 auto;
+}
+#id1{
+float:right;
+margin-top:60px;
+}
+.main-nav ul{
+display:inline-block;
+list-style:none;
+margin-left:40px;
+}
+
+.main-nav li a{
+color: #fff;
+text-decoration:none;
+}

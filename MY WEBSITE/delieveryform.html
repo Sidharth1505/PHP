@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form</title>
+</head>
+<style>
+body{
+background-image:url("bg2.jpg") ;
+background-repeat:no-repeat;
+background-size:cover;
+
+
+}
+.logo{
+      width:100px;
+      height: 100px;
+      position: relative;
+      left:-15px;
+      border-radius: 70px;
+}
+.row{
+max-width:1180px;
+margin:0 auto;
+}
+.main-nav{
+margin-top:60px;
+position: absolute;
+top: -15px;
+right:50px;
+}
+.main-nav li{
+display:inline-block;
+list-style:none;
+margin-left:40px;
+}
+
+.main-nav li a{
+padding:5px 0;
+color:black;
+text-decoration:none;
+font-size:20px;
+}
+.main-nav li a:hover{
+border-bottom:2px solid #bf55ec;
+}
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1200px)
+{
+  .container{
+    max-width: 1140px;
+  }
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+}
+form{
+  flex: 4;
+}
+
+.title{
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #5195A8), color-stop(100, #70EAFF));
+  background: -moz-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+  background: -ms-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+  background: -o-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+  background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);
+  border-radius:5px 5px 0 0 ;
+  padding: 20px;
+  color: #f6f6f6;
+}
+h2{
+  margin: 0;
+  padding-left: 15px; 
+}
+.required{
+  color: red;
+}
+label, table{
+  display: block;
+  margin: 10px;
+}
+label>span{
+      float: left;
+  width: 25%;
+  margin-top: 12px;
+  padding-right: 1px;
+  font-weight: bold;
+  font-size:22px;
+  margin-left:5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"]
+{
+  width: 70%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  color: #888;
+}
+
+
+p{
+  display: block;
+  color: rgb(236, 225, 230);
+  margin: 0;
+  padding-left: 25px;
+}
+
+
+button{
+  width: 25%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background: #52ad9c;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+  background: #428a7d;
+}
+</style>
+<body >
+      <nav>
+            <div class="row">
+            
+            <img src="logo1.png" class="logo">
+            <ul class="main-nav" >
+            <li><a href="website.html">HOME</a></li>
+            <li ><a href="delieveryform.html">HOME DELIEVERY</a></li>
+            <li ><a href="info.html">CHECK  MORE</a></li>
+            <li ><a href="sign up 1.html">SIGN UP</L></a></li>
+            <li ><a href="about us.html">ABOUT US</a></li>
+            </UL>
+            </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+<form>
+      <label>
+            <span class="fname">Full Name <span class="required">*</span></span>
+                <input type="text" name="fname">
+      </label>
+      <label>
+            <span>Street Address <span class="required">*</span></span>
+            <input type="text" name="houseadd" placeholder="House number and street name" required>
+          </label>
+          <label>
+            <span>&nbsp;</span>
+            <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+          </label>
+          <label>
+            <span>Town / City <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          <label>
+            <span>State / County <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          <label>
+            <span>Postcode / ZIP <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          <label>
+            <span>Phone <span class="required">*</span></span>
+            <input type="tel" name="city"> 
+          </label>
+          <label>
+            <span>Email Address <span class="required">*</span></span>
+            <input type="email" name="city"> 
+          </label>
+          <label for="order">
+            <span>Your Order</span>
+            <div style="display:inline-block ;">
+            <input type="checkbox" name="checkbox1">Caffe Americano <br>
+            <input type="checkbox" name="checkbox1">Cappucino<br>
+            <input type="checkbox" name="checkbox2" >Espresso<br>
+            <input type="checkbox" name="checkbox3">Flat white<br>
+            <input type="checkbox" name="checkbox4">Filter Coffee<br>
+            <input type="checkbox" name="checkbox5">Dalgona<br>
+            <input type="checkbox" name="checkbox5">Instant<br>
+            </div>
+          </label>
+<label>        
+<span>Any other special requirements</span>
+<input type="text" name="textbox1" required> 
+</label>
+<br>
+<div style="">
+      <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+    </div>
+    <p>
+        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+    </p>
+    <div>
+      <input type="radio" name="dbt" value="cd"> Cash on Delivery
+    </div>
+    <div>
+      <input type="radio" name="dbt" value="cd"> Paypal <span>
+      <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+      </span>
+    </div>
+<button type="button">Place Your Order</button>
+</form>
+
+</body>
+</html>
+
+

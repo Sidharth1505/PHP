@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <tittle>
+    </title>
+    <style>
+    
+    
+    
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    }
+    
+    
+    html {
+    box-sizing: border-box;
+    }
+    
+    
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+    
+    .column {
+        float: left;
+    width: 50%;
+    
+    margin-bottom: 16px;
+    padding: 0 8px;
+    }/* Remove extra left and right margins, due to padding in columns */
+    .rowS {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+.rowS:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    }
+    
+    .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    }
+    
+    .container {
+    padding: 0 16px;
+    height:300px;
+    }
+    
+    .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
+    .button:hover {
+    background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    </style>
+    </head>
+    <body>
+    <div class="about-section">
+    </div>
+    
+    <div class="rowS">
+        <div class="column" style="background-color:brown;">
+            <div class="card">
+                <div class="container">
+                    <h2>About Us</h2>
+                    <div>
+                        <p> we strive to provide the best experience to our guests. We opened our first cafe in 2015 at sector-17 in Chandigarh </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <img src="aboutus.jpg" style="width:400px ;  height : 300px;">  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rowS">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <div>
+                        <img src="aboutus.jpg" style="width:400px; height:300px;"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column"style="background-color:brown;">
+            <div class="card">
+                <div class="container">
+                    <h2>Services</h2>
+                    <div>
+                        <ul>
+                            <li>Business Events </li> 
+                            <li> Birthdays</li>
+                            <li>Party & Others</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rows">
+        <div class="column"style="background-color:brown;">
+            <div class="card">
+                <div class="container">
+                    <h2>Opening Hours</h2>
+                    <div>
+                        <table>
+                            <tr>
+                                <td class="td">sunday</td>
+                                <td> 11am-9pm</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Monday</td>
+                                <td> 11am-9pm</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Tuesday</td>
+                                <td> 11am-9pm</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Wedneday</td>
+                                <td> 11am-9pm</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Thursday</td>
+                                <td> 11am-8pm</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Friday</td>
+                                <td> 11am-8pm</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Saturay</td>
+                                <td> 11am-10pm</td>
+                            </tr>
+                        </table>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="column"style="background-color:brown;">
+            <div class="card">
+                <div class="container">
+                    <img src="aboutus.jpg" style="width:400px; height:300px;">  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,619 @@
+<html>
+<head>
+<title></title>
+
+<style>
+	.menu-sectiontitle{
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-family: SpartanLimport;
+  color:#bd1220 ;
+}
+
+.menu-describe{
+  padding-left: 2rem;
+  padding-top: 1rem;
+  color: black;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.menu-subtitle {
+  text-transform: uppercase;
+  font-family: SpartanLimport;
+  color:white;
+  font-size: 40px;
+}
+
+.menu{
+  background-color: #E0E5EC;
+  display: inline-flex;
+  width:100%;
+  z-index: 1;
+
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.menu-section{
+  float: left;
+  background-color: #E0E5EC;
+  width: 25%;
+  padding: 2rem;  
+  height: 420px;
+  z-index: 2;
+}
+
+.menu-flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 105%;
+  perspective: 1000px;
+  z-index: 3;
+}
+
+.menu-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+  border-radius: 5%;
+  background: none;
+}
+
+.menu-flip-card:hover .menu-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.menu-flip-card-front, .menu-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.menu-flip-card-front {
+  background: #E0E5EC;
+  color: black;
+}
+
+.menu-flip-card-back {
+  background-color: #E0E5EC;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 5%;
+}
+
+.menu-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.menu-text-title{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#bd1220;
+}
+
+.menu-header-container{
+  display: inline-flex;
+  width:100%;
+  padding:1rem;
+}
+
+.menu-hr-container {
+  width: 100%;
+  height: 41px;
+  padding-top:2.5%;
+}
+
+.menu-hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-color: black;
+}
+
+.menu-image{
+  width:100%;
+  height:100%;
+  border-radius: 5%;
+}
+
+.menu-circle-image{
+  width: 75px;
+}
+
+.menu-button-on{
+  background-color: #E0E5EC;
+  border-radius: 50%;
+  border: 5px solid #E0E5EC;
+  width: 10%;
+  transition: 0.5s;
+  box-shadow: none;
+  outline: none;
+}
+
+.menu-circle-image:hover{
+  cursor: pointer;
+}
+
+.menu-button-off{
+  background-color: #E0E5EC;
+  border-radius: 50%;
+  border: 5px solid #E0E5EC;
+  width: 10%;
+  outline: none;
+  transition: 0.5s;
+  box-shadow: 2px 2px 8px rgb(163,177,198,0.6), -2px -2px 12px    rgba(255,255,255, 0.5);;
+}
+h2
+{
+	color:silver;
+}
+body{
+background-color:black;
+}
+.main-nav{
+	background-image: "bg img info html.jpg";
+float:right;
+margin-top:60px;
+}
+.main-nav li{
+display:inline-block;
+list-style:none;
+margin-left:40px;
+}
+
+.main-nav li a{
+padding:5px 0;
+color: #fff;
+text-decoration:none;
+font-size:18px;
+}
+.main-nav li a:hover{
+border-bottom:2px solid #bf55ec;
+}
+</style>
+
+</head>
+<body style=font-family:arial;>>   
+ <header >
+
+<nav>
+<div class="row">
+
+<img src="logo1.png">
+<ul class="main-nav" >
+
+<li ><a href="delieveryform.html">HOME DELIEVERY</a></li>
+<li ><a href="info.html">CHECK  MORE</a></li>
+<li ><a href="sign up 1.html">SIGN UP</L></a></li>
+<li ><a href="about us.html">ABOUT US</a></li>
+</UL>
+</div>
+</nav>
+</header>
+<center><h2 id="id1">CAFFE AMERICANO</h2>
+	<div class="menu-drinks-on" id="id-menu-drinks">
+
+<section class="menu" style="display: inline;">
+    <article class="menu-section">
+      <!-- first column -->
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="Coffee/1.jpeg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">CAFFE AMERICANO</h3>
+              <p class="about-text">
+                Outside of Italy, the ratios of espresso, milk, and foam typically equal 1/3 each. Cappuccino is traditionally small (180 ml maximum) with a thick layer of foam, while "latte" traditionally is larger (200–300 ml). Caffè latte is often served in a large glass; cappuccino mostly in a 150–180 ml cup with a handle.
+              </p>
+              <h3 class="menu-text-title">₹1800</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- second column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="Coffee/14.jpeg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">HOT COFFEE</h3>
+              <p class="about-text">
+                Typically in the UK (and in Italy) between 1 and 16 imperial fluid ounces or 28 and 455 ml of hot water is added to the double espresso.
+              </p>
+              <h3 class="menu-text-title">₹900</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- third column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="Coffee/2.jpeg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">CREAM LATTE</h3>
+              <p class="about-text">
+               Tamping down the coffee promotes the water's even penetration through the grounds.This process produces an almost syrupy beverage by extracting both solid and dissolved components.
+              </p>
+              <h3 class="menu-text-title">₹2200</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- fourth column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="Coffee/12.jpeg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">ICED LATTE</h3>
+              <p class="about-text">
+                Key to the beverage is the crema being coaxed into the meniscus resulting in a uniform dark brown colour across the top of the beverage.
+              </p>
+              <h3 class="menu-text-title">₹1700</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="cappucino.webp" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">CAPPUCINO</h3>
+              <p class="about-text">
+                Cappuccinos are most often prepared with an espresso machine. The double espresso is poured into the bottom of the cup, followed by a similar amount of hot milk, which is prepared by heating and texturing the milk using the espresso machine steam wand.
+              </p>
+              <h3 class="menu-text-title">₹3200</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+     <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="espresso.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">ESPRESSO</h3>
+              <p class="about-text">
+                Espresso is made by using very hot water under high pressure through finely ground compacted coffee.
+              </p>
+              <h3 class="menu-text-title">₹3200</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div style="clear: both;"></div>
+    <br>
+  </section>
+  <section class="menu" style="display: inline;">
+    <article class="menu-section">
+      <!-- first column -->
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="Coffee/15.jpeg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">COFFEE SHOTS</h3>
+              <p class="about-text">
+                The coarser the coffee grinds, the more one must tamp the coffee to obtain the same extraction. With the press disc remaining in place, the upper cup is nested into the top of the tumbler; boiling water is poured in.
+              </p>
+              <h3 class="menu-text-title">₹4200</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- second column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="Coffee/16.jpeg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">HERBAL</h3>
+              <p class="about-text">
+                Instant coffee in a concentrated liquid form is also manufactured.
+              </p>
+              <h3 class="menu-text-title">₹2200</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- third column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="Coffee/17.jpeg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">HERBAL CHERRY</h3>
+              <p class="about-text">
+                The term Italiano is sometimes used in the Western United States, meaning a short Americano, specifically a 1:1 espresso/water ratio. The hot water can be drawn directly from the same espresso machine that is used to brew the espresso, or from a separate water heater or kettle.
+              </p>
+              <h3 class="menu-text-title">₹4200</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- fourth column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="Coffee/18.jpeg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">FILTERED COFFEE</h3>
+              <p class="about-text">
+                Using the same heater is convenient, particularly at home, not needing a separate heater, and the water can in fact be drawn directly into the glass, either before (for a Long Black) or after (for an Americano) pulling the shot of espresso.
+              </p>
+              <h3 class="menu-text-title">₹1800</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="americano.jpg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">AMERICANO</h3>
+                <p class="about-text">
+                  The Americano consists of just water and espresso. The ratio of these ingredients is typically either 1/2 and 1/2 or 1/3 espresso (1-2 shots) and 2/3 water.
+                </p>
+                <h3 class="menu-text-title">₹2800</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="flatwhite.jpg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">FLAT WHITE</h3>
+                <p class="about-text">
+                 A flat white is generally served in a ceramic cup with saucer. Milk is frothed and foamy as it would be for a latte but held back to around 20 mm/1 inch of microfoam, creating a meniscus.
+                </p>
+                <h3 class="menu-text-title">₹2800</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    <div style="clear: both;"></div>
+    <br>
+  </section>
+  <br>
+
+</div>
+<!-- drinks menu ending -->
+
+<!-- snacks menu -->
+<div class="menu-snacks-off" id="id-menu-snacks">
+
+  <section class="menu" style="display: inline;">
+      <article class="menu-section">
+        <!-- first column -->
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/29.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">PIZZA</h3>
+                <p class="about-text">
+                  Some espresso machines have a separate hot water spout for this purpose , while others allow the use of the steam wand for dispensing hot water. Using a separate water heater is more practical in a commercial setting.
+                </p>
+                <h3 class="menu-text-title">₹5200</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <!-- second column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/21.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">FRIES</h3>
+                <p class="about-text">
+                  A small porcelain cup, on a saucer, with a spoon at the side, on beige and orange patterened tablecloth; some packets of material are wedged under the other side of the cup.
+                </p>
+                <h3 class="menu-text-title">₹1200</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <!-- third column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/22.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">BURGER</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- fourth column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/24.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">SANDWICH</h3>
+                <p class="about-text">
+                 Within the cup is a whitish foamy substance on which a flower shape has been drawn in a brown syrup Cappucino as traditionally served with breakfast in Italy.
+                <h3 class="menu-text-title">₹980</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="filter coffee.jpg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">FILTER COFFEE</h3>
+                <p class="about-text">
+                  South Indian filter coffee is brewed with a metal device that resembles two cylindrical cups, one of which has a pierced bottom that nests into the top of the 'tumbler' cup, leaving ample room beneath to receive the brewed coffee.
+                </p>
+                <h3 class="menu-text-title">₹1400</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+       <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="dalgona.jpg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">DALGONA COFFEE</h3>
+                <p class="about-text">
+                  Dalgona coffee  is a beverage made by whipping equal proportions of instant coffee powder, sugar, and hot water until it becomes creamy and then adding it to cold or hot milk.
+                </p>
+                <h3 class="menu-text-title">₹980</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div style="clear: both;"></div>
+      <br>
+    </section>
+    <section class="menu" style="display: inline;">
+      <article class="menu-section">
+        <!-- first column -->
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/25.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">WTH IS THIS?</h3>
+                <p class="about-text">
+                  Using the same heater is convenient, particularly at home, not needing a separate heater, and the water can in fact be drawn directly into the glass, 
+                <h3 class="menu-text-title">₹7980</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <!-- second column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/26.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">WAFFAL</h3>
+                <p class="about-text">
+                  Some espresso machines have a separate hot water spout for this purpose , while others allow the use of the steam wand for dispensing hot water. Using a separate water heater is more practical in a commercial setting,
+                </p>
+                <h3 class="menu-text-title">₹1900</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <!-- third column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/27.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">COOKIES</h3>
+                <p class="about-text">
+                  Within the cup is a whitish foamy substance on which a flower shape has been drawn in a brown syrup Cappucino as traditionally served with breakfast in Italy, in a small cup with some chocolate garnish.
+                </p>
+                <h3 class="menu-text-title">₹1200</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- fourth column -->
+      
+  
+      <div style="clear: both;"></div>
+      <br>
+    </section>
+    <br>
+  
+  </div>
+</body>
+</html>
