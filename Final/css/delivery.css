@@ -1,0 +1,136 @@
+body{
+background-image:url("../images/cafe3.jpg") ;
+background-repeat:no-repeat;
+background-size:cover;
+
+
+}
+.logo{
+      width:100px;
+      height: 100px;
+      position: relative;
+      left:-15px;
+      border-radius: 70px;
+}
+.row{
+max-width:1180px;
+margin:0 auto;
+}
+.main-nav{
+margin-top:60px;
+position: absolute;
+top: -15px;
+right:50px;
+}
+.main-nav li{
+display:inline-block;
+list-style:none;
+margin-left:40px;
+}
+
+.main-nav li a{
+padding:5px 0;
+color:white;
+text-decoration:none;
+font-size:20px;
+}
+.main-nav li a:hover{
+border-bottom:2px solid #bf55ec;
+}
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1200px)
+{
+  .container{
+    max-width: 1140px;
+  }
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+}
+form{
+  flex: 4;
+}
+
+.title{
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #5195A8), color-stop(100, #70EAFF));
+  background: -moz-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+  background: -ms-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+  background: -o-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+  background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);
+  border-radius:5px 5px 0 0 ;
+  padding: 20px;
+  color: #f6f6f6;
+}
+h2{
+  margin: 0;
+  padding-left: 15px; 
+}
+.required{
+  color: red;
+}
+label, table{
+  display: block;
+  margin: 10px;
+}
+label>span{
+      float: left;
+  width: 25%;
+  margin-top: 12px;
+  padding-right: 1px;
+  font-weight: bold;
+  font-size:22px;
+  margin-left:5px;
+}
+
+input[type=text], input[type=tel], input[type=email]
+{
+  background: transparent;
+  width: 35%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-left: -300px;
+  border: 1px solid #black;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+p{
+  display: block;
+  color: rgb(236, 225, 230);
+  margin: 0;
+  padding-left: 25px;
+}
+
+::placeholder{
+  color: brown;
+}
+button{
+  width: 25%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background: #52ad9c;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+  background: #428a7d;
+}
+.contain{
+  text-align: center;
+}

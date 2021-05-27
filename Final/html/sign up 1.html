@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "icon" href = "../images/logo1.png" type = "image/x-icon">
+  <title>Sign Up</title>
+  
+    <title>Sign up and sign in form</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "main-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "main-nav";
+  }
+}
+</script>
+<style type="text/css">
+  .main-nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-nav a {display: none;}
+  .main-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-nav.responsive {position: relative;}
+  .main-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+</style>
+</head>
+<body>
+     <header >
+<nav>
+<div class="row">
+<a href="website.html">
+<img src="../logo1.png" class="logo"></a>
+<ul class="main-nav" id="myTopnav">
+<li ><a href="index.html">HOME</a></li>
+<li ><a href="delieveryform.html">HOME DELIEVERY</a></li>
+<li ><a href="info.html">OUR MENU</a></li>
+<!--<li ><a href="sign up 1.html">SIGN UP</l></a></li>-->
+<li ><a href="aboutus.html">ABOUT US</a></li>
+<li ><a href="contactuslatest.html">CONTACT US</a></li>
+<li>  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a></li>
+</UL>
+</div>
+</nav>
+</header>
+    <div class="wrapper">
+        <div class="container">
+          <div class="sign-up-container">
+            <form>
+              <h1>Create Account</h1>
+              <div class="social-links">
+                <div>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                  <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </div>
+                
+              </div>
+              <span>or use your email for registration</span>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Re-Type Password">
+              <button class="form_btn">Sign Up</button>
+            </form>
+          </div>
+          <div class="sign-in-container">
+            <form>
+              <h1>Sign In</h1>
+              <div class="social-links">
+                <div>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                  <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </div>
+                
+                
+              </div>
+              <span>or use your account</span>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <button class="form_btn">Sign In</button>
+            </form>
+          </div>
+          <div class="overlay-container">
+            <div class="overlay-left">
+              <h1>Welcome Back</h1>
+              <p>To keep connected with us please login with your personal information</p>
+              <button id="signIn" class="overlay_btn">Sign In</button>
+            </div>
+            <div class="overlay-right">
+              <h1>Hello, Friend</h1>
+              <p>Enter your personal information and start connect with us</p>
+              <button id="signUp" class="overlay_btn">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+           
+          const signUpBtn = document.getElementById("signUp");
+            const signInBtn = document.getElementById("signIn");
+            const container = document.querySelector(".container");
+ 
+            signUpBtn.addEventListener("click",() =>{
+                container.classList.add("right-panel-active");
+ 
+            })
+            signInBtn.addEventListener("click",() =>{
+                container.classList.remove("right-panel-active")
+            })
+      
+      </script>
+       
+</body>
+</html>
+

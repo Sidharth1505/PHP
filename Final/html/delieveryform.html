@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Delivery</title>
+<link rel = "icon" href = "../images/logo1.png" type = "image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/delivery.css">
+<style>
+
+.main-nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-nav a {display: none;}
+  .main-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-nav.responsive {position: relative;}
+  .main-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+</style>
+<script type="text/javascript">
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "main-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "main-nav";
+  }
+}
+</script>
+</head>
+<body >
+      <nav>
+            <div class="row">
+            
+            <img src="../logo1.png" class="logo">
+            <ul class="main-nav" id="myTopnav">
+            <li><a href="index.html">HOME</a></li>
+            <!--<li ><a href="delieveryform.html">HOME DELIEVERY</a></li>-->
+            <li ><a href="info.html">OUR MENU</a></li>
+            <li ><a href="aboutus.html">ABOUT US</a></li>
+            <li ><a href="contactuslatest.html">CONTACT US</a></li>
+            <li ><a href="sign up 1.html">SIGN UP</l></a></li>
+            <li>  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a></li>
+            </UL>
+            </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+<div class="contain">     
+<form>
+      <label>
+            <span class="fname">Full Name <span class="required">*</span></span>
+                <input type="text" name="fname">
+      </label>
+      <label>
+            <span>Street Address <span class="required">*</span></span>
+            <input type="text" name="houseadd" placeholder="House number and street name" required>
+          </label>
+          <label>
+            <span>&nbsp;</span>
+            <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+          </label>
+          <label>
+            <span>Town / City <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          <label>
+            <span>State / County <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          <label>
+            <span>Postcode / ZIP <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          <label>
+            <span>Phone <span class="required">*</span></span>
+            <input type="tel" name="city"> 
+          </label>
+          <label>
+            <span>Email Address <span class="required">*</span></span>
+            <input type="email" name="city"> 
+          </label>
+          <label for="order">
+            <span>Your Order</span>
+            <div style="display:inline-block ;text-align: justify;">
+            <input type="checkbox" name="checkbox1">Caffe Americano <br>
+            <input type="checkbox" name="checkbox1">Cappucino<br>
+            <input type="checkbox" name="checkbox2" >Espresso<br>
+            <input type="checkbox" name="checkbox3">Flat white<br>
+            <input type="checkbox" name="checkbox4">Filter Coffee<br>
+            <input type="checkbox" name="checkbox5">Dalgona<br>
+            <input type="checkbox" name="checkbox5">Instant<br>
+            </div>
+          </label>
+<label>        
+<span>Any other special requirements</span>
+<input type="text" name="textbox1" required> 
+</label>
+<br>
+<div style="">
+      <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+    </div>
+    <p style="color:black;">
+        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+    </p>
+    <div>
+      <input type="radio" name="dbt" value="cd"> Cash on Delivery
+    </div>
+    <div>
+      <input type="radio" name="dbt" value="cd"> Paypal <span>
+      <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+      </span>
+    </div>
+<button type="button">Place Your Order</button>
+</form>
+</div>
+</body>
+</html>
+
+
