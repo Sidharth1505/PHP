@@ -170,7 +170,7 @@ margin-right: 15px;
 border:1px solid #fff;
 }
 .btn-full:hover{
-background-color:#fff;
+background-color:grey;
 }
 
 .btn-nav{
@@ -181,7 +181,7 @@ border:1px solid #fff;
 }
 
 .btn-nav:hover{
-background-color:#bf55ec;
+background-color:grey;
 }
 
 
